@@ -12,5 +12,5 @@ This is an ESP-IDF project using a DHT11/DHT22 temperature and humidity sensor v
 Clone the repo:
 
 ```bash
-git clone https://github.com/inifomeeo/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
+git clone https://github.com/Inifomeeo/sensor-data-logger.git
+cd sensor-data-logger
