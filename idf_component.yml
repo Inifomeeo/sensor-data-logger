@@ -1,0 +1,4 @@
+dependencies:
+  dht:
+    path: components/dht
+    git: https://github.com/UncleRus/esp-idf-lib.git
