@@ -14,3 +14,8 @@ Clone the repo:
 ```bash
 git clone https://github.com/Inifomeeo/sensor-data-logger.git
 cd sensor-data-logger
+```
+
+## Output
+
+![Sensor Data Logs](docs/logs.png)
