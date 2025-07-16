@@ -34,14 +34,14 @@ void read_sensor(void *pvParameters)
             data.temperature = temperature;
             data.humidity = humidity;
             
-            if (xQueueSend(queue, &data, pdMS_TO_TICKS(100)) != pdTRUE) {
+            if (xQueueSendToBack(queue, &data, pdMS_TO_TICKS(100)) != pdTRUE) {
                 ESP_LOGW(TAG, "Queue full - dropping reading");
             }
         } else {
             ESP_LOGE(TAG, "Failed to read sensor");
         }
 
-        vTaskDelay(pdMS_TO_TICKS(2000));
+        vTaskDelay(2000 / portTICK_PERIOD_MS);
     }
 }
 
